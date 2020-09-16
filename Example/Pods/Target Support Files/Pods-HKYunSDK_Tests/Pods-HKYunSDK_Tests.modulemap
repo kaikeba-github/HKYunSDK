@@ -1,0 +1,6 @@
+framework module Pods_HKYunSDK_Tests {
+  umbrella header "Pods-HKYunSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
