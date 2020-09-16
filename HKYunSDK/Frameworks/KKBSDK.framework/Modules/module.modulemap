@@ -1,0 +1,6 @@
+framework module KKBSDK {
+  umbrella header "KKBSDK.h"
+
+  export *
+  module * { export * }
+}
