@@ -43,5 +43,4 @@ Pod::Spec.new do |s|
   s.dependency 'WCDB'
   s.dependency 'YTKNetwork'
   s.dependency 'AFNetworking'
-  s.dependency 'WZLSerializeKit'
 end
