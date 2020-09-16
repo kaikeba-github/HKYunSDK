@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'HKYunSDK_Example' do
+  pod 'HKYunSDK', :path => '../'
+
+  target 'HKYunSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
