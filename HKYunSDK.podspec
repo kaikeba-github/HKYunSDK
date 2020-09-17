@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'HKYunSDK/Classes/**/*'
-  s.vendored_frameworks = "HKYunLib/Frameworks/KKBSDK.framework"
+  s.vendored_frameworks = "HKYunSDK/Frameworks/KKBSDK.framework"
   
   # s.resource_bundles = {
   #   'HKYunSDK' => ['HKYunSDK/Assets/*.png']
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MJExtension' #工程依赖的第三方库
-  s.dependency 'WCDB'
+  # s.dependency 'WCDB'
   s.dependency 'YTKNetwork'
   s.dependency 'AFNetworking'
 end
