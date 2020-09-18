@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HKYunSDK'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'HKYunSDK Components'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,9 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  if s.respond_to? 'swift_version'
+    s.swift_version = "5.0"
+  end
 
   s.source_files = 'HKYunSDK/Classes/**/*'
   s.vendored_frameworks = "HKYunSDK/Frameworks/KKBSDK.framework"
@@ -39,7 +42,8 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'MJExtension' #工程依赖的第三方库
+  s.dependency 'HKYunLib' #工程依赖的第三方库
+  s.dependency 'MJExtension'
   # s.dependency 'WCDB'
   s.dependency 'YTKNetwork'
   s.dependency 'AFNetworking'
